@@ -48,7 +48,8 @@ def calculate_readability_score(text):
         # reduce by one if the word ends with 'e'
         if(word[:-1] == 'e'):
             vowel_count -= 1
-
+            
+        # complex word has 3+ syllables (vowel_count)
         if (vowel_count >= 3):
             complex_word_count += 1
 
